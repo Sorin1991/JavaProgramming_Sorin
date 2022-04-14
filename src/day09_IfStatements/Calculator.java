@@ -1,6 +1,6 @@
 package day09_IfStatements;
 
-public class Calculaor {
+public class Calculator {
     public static void main(String[] args) {
         int n1 = 15;
         int n2 = 15;
