@@ -54,7 +54,7 @@ carTask:
 		Create the following subclasses of Car:
 			1. Toyota:
 					extra methods:
-							realiabile()
+							reliable()
 
 			2. BMW:
 					extra methods:
