@@ -16,6 +16,7 @@ public class Replit {
                 chessBoard[i-1][k++]=""+i+j;
             }
         }
+        //sorin
 
 
 
