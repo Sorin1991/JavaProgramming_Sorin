@@ -10,6 +10,7 @@ public class Toyota extends Car {
     public void reliable(){
         System.out.println(brand + " " + model + " is reliable");
         System.out.println("Sorin");
+        System.out.println("Sorin2");
     }
 
 
