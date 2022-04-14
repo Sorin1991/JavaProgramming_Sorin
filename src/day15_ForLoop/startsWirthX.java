@@ -1,0 +1,50 @@
+package day15_ForLoop;
+import java.util.Scanner;
+public class startsWirthX {
+    public static void main(String[] args) {
+        System.out.println("Enter a word:");
+        String word = new Scanner(System.in).next();   // xcodex
+
+        if(word.charAt(0) == 'x'){
+           word = word.replaceFirst("x" , "a"); // "acodex"
+
+        }
+
+        System.out.println(word);
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+}
+/*
+Warmup tasks:
+	1. Write a program that asks user to enter a word. If the work starts with x, replace it with a.
+                    Input:
+                        xcodex
+                    Output:
+                        acodex
+
+
+
+	3. Write a program that asks user to enter first and last names, and then prints the full name in regular format (first character in upper case)
+
+                    input:
+                        firstName = "cyDEo"
+                        lastName = "SCHOOL";
+
+                    output:
+                        Cydeo School
+
+
+
+ */
