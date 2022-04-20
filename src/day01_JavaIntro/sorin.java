@@ -1,4 +1,4 @@
-package day12_Scanner.day01_JavaIntro;
+package day01_JavaIntro;
 
 import java.util.Scanner;
 import java.util.Arrays;
