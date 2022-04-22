@@ -13,7 +13,7 @@ public class FinallyBlock {
         }catch (RuntimeException e){
             System.out.println("Catch Block");
             e.printStackTrace();
-            System.exit(0);
+            System.exit(0);  // with this finally block will not be executed
 
         }finally {
             System.out.println("Finally Block");
