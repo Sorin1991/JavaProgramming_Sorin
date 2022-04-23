@@ -1,6 +1,6 @@
 package utilities;
 
-public class Timer_Seconds {
+public class TimerInSeconds {
 
 
 
