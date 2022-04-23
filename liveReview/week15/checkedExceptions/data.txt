@@ -1,0 +1,10 @@
+in
+this
+example
+we
+will
+see
+IOException
+another
+checked
+exception
