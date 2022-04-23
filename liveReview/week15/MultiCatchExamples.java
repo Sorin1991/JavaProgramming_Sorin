@@ -2,7 +2,7 @@ package week15;
 
 public class MultiCatchExamples {
     public static void main(String[] args) {
-
+           // more specialized exception class statement should be first in the order
 
         String word = "Java"; //length is 4
 
