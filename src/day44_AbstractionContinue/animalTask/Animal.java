@@ -77,13 +77,15 @@ public abstract class Animal {
     }
 
 
-    public abstract void eat();
+    public final void drink(){
+        System.out.println(name + " is drinking");
+    }
 
-    public abstract void drink();
+    public  abstract void eat();
 
-    @Override
+
     public String toString() {
-        return "Animal{" +
+        return getClass().getSimpleName()+"{" +
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +
                 ", gender=" + gender +
