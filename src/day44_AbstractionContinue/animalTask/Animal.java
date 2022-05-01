@@ -54,6 +54,10 @@ public abstract class Animal {
     }
 
     public void setAge(int age) {
+        if(age > 90 || age < 0){
+            throw new RuntimeException("Invalid Age");
+        }
+
         this.age = age;
     }
 
@@ -62,6 +66,9 @@ public abstract class Animal {
     }
 
     public void setSize(String size) {
+        if(size.isEmpty()){
+            throw  new RuntimeException("Invalid size");
+        }
         this.size = size;
     }
 
