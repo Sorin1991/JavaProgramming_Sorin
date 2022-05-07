@@ -30,8 +30,23 @@ public interface PropertiesOfInterface {
 
     public abstract void method3();
 
-    public default void drink (){   // default is with implementation which can be in interface
+    public default void method4(){   // default is with implementation which can be in interface
         System.out.println("Default method");
+    }
+
+}
+
+class Test implements PropertiesOfInterface{
+
+    @Override
+    public void method3() {
+
+    }
+
+    public static void main(String[] args) {
+
+        new Test().method4();
+
     }
 
 }
