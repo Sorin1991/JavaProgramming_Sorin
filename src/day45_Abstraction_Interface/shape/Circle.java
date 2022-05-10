@@ -1,6 +1,6 @@
 package day45_Abstraction_Interface.shape;
 
-public class Circle extends Shape {
+public final class Circle extends Shape {
 
     private  double radius;
 
@@ -36,7 +36,7 @@ public class Circle extends Shape {
     public String toString() {
         return "Circle{" +
                 super.toString()+
-                "radius=" + radius +
+                ", radius = " + radius +
                 '}';
     }
 }

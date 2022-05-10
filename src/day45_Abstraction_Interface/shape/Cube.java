@@ -1,6 +1,6 @@
 package day45_Abstraction_Interface.shape;
 
-public class Cube extends Shape implements Volume{
+public final class Cube extends Shape implements Volume{
 
 
     private double side;
@@ -40,7 +40,8 @@ public class Cube extends Shape implements Volume{
     public String toString() {
         return "Cube{" +
                 super.toString()+
-                "side=" + side +
+                ", volume = "+ volume()+
+                ", side = " + side +
                 '}';
     }
 }

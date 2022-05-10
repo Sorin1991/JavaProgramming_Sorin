@@ -1,6 +1,6 @@
 package day45_Abstraction_Interface.shape;
 
-public class Pentagon extends Shape implements Volume{
+public final class Pentagon extends Shape implements Volume{
 
     private double apothem;
     private double side;
@@ -93,11 +93,12 @@ public class Pentagon extends Shape implements Volume{
     public String toString() {
         return "Pentagon{" +
                 super.toString()+
-                "apothem=" + apothem +
-                ", side=" + side +
-                ", length=" + length +
-                ", base=" + base +
-                ", height=" + height +
+                ", volume = "+ volume()+
+                ", apothem = " + apothem +
+                ", side = " + side +
+                ", length = " + length +
+                ", base = " + base +
+                ", height = " + height +
                 '}';
     }
 }

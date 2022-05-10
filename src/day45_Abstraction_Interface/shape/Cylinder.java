@@ -1,6 +1,6 @@
 package day45_Abstraction_Interface.shape;
 
-public class Cylinder extends Shape implements Volume{
+public final class Cylinder extends Shape implements Volume{
 
     private final static double pi =3.14;
     private double radius;
@@ -53,8 +53,9 @@ public class Cylinder extends Shape implements Volume{
     public String toString() {
         return "Cylinder{" +
                 super.toString()+
-                "radius=" + radius +
-                ", height=" + height +
+                ", volume = "+ volume()+
+                ", radius = " + radius +
+                ", height = " + height +
                 '}';
     }
 }

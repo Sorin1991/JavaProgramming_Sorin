@@ -1,6 +1,6 @@
 package day45_Abstraction_Interface.shape;
 
-public class Rectangle extends Shape implements Volume{
+public final class Rectangle extends Shape implements Volume{
 
     private  double length;
     private  double width;
@@ -66,9 +66,10 @@ public class Rectangle extends Shape implements Volume{
     public String toString() {
         return "Rectangle{" +
                 super.toString()+
-                "length=" + length +
-                ", width=" + width +
-                ", height=" + height +
+                ", volume = "+ volume()+
+                ", length = " + length +
+                ", width = " + width +
+                ", height = " + height +
                 '}';
     }
 }

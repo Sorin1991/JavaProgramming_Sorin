@@ -1,6 +1,6 @@
 package day45_Abstraction_Interface.shape;
 
-public class Triangle extends Shape implements Volume{
+public final class Triangle extends Shape implements Volume{
 
     private double side;
     private double height;
@@ -49,7 +49,7 @@ public class Triangle extends Shape implements Volume{
 
     @Override
     public double area() {
-        return 1/2*height*base;
+        return 0.5*height*base;
     }
 
     @Override
@@ -59,16 +59,17 @@ public class Triangle extends Shape implements Volume{
 
     @Override
     public double volume() {
-        return  1/2*height*base *height;
+        return  0.5*height*base *height;
     }
 
     @Override
     public String toString() {
         return "Triangle{" +
                 super.toString()+
-                "side=" + side +
-                ", height=" + height +
-                ", base=" + base +
+                ", volume = "+ volume()+
+                ", side = " + side +
+                ", height = " + height +
+                ", base = " + base +
                 '}';
     }
 }

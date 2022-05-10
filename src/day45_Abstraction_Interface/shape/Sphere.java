@@ -1,6 +1,6 @@
 package day45_Abstraction_Interface.shape;
 
-public class Sphere extends Shape implements Volume{
+public final class Sphere extends Shape implements Volume{
 
     private final static double pi =3.14;
 
@@ -41,7 +41,8 @@ public class Sphere extends Shape implements Volume{
     public String toString() {
         return "Sphere{" +
                 super.toString()+
-                "radius=" + radius +
+                ", volume = "+ volume()+
+                ", radius = " + radius +
                 '}';
     }
 }
