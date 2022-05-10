@@ -1,6 +1,6 @@
 package day45_Abstraction_Interface.shape;
 
-public class Square extends Shape {
+public class Square extends Shape implements Volume {
 
     private double side;
 
@@ -37,4 +37,11 @@ public class Square extends Shape {
                 "side=" + side +
                 '}';
     }
+
+    @Override
+    public double volume() {
+        return side*side*side;
+    }
+
+
 }
