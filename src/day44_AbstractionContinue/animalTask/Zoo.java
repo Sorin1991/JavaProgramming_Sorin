@@ -5,7 +5,7 @@ public class Zoo {
 
         Cat cat = new Cat("Barsik", "British",'M',3,"6.5","Black");
         cat.eat();
-        cat.Meow();
+        cat.meow();
         cat.drink();
         System.out.println("---------------------------------------------------");
 
