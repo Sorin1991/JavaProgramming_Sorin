@@ -40,10 +40,10 @@ public  abstract class Employee extends Person {
 
     public String toString() {
         return "Employee{" +
-                "name=" + getName() +
-                "age=" + getAge() +
-                "gender=" + getGender() +
-                "id=" + id +
+                "name= " + getName() +
+                " age= " + getAge() +
+                " gender= " + getGender() +
+                " id=" + id +
                 ", jobTitle='" + jobTitle + '\'' +
                 ", salary=" + salary +
                 '}';
