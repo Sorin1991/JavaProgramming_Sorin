@@ -1,9 +1,11 @@
 package Day47_Polymorphism_Continue;
 
+import day43_Abstraction.employeeTask.*;
 import day44_AbstractionContinue.animalTask.Animal;
 import day44_AbstractionContinue.animalTask.Cat;
 import day44_AbstractionContinue.animalTask.Dog;
 import day45_Abstraction_Interface.shape.Circle;
+import day45_Abstraction_Interface.shape.Cube;
 import day45_Abstraction_Interface.shape.Shape;
 import day45_Abstraction_Interface.shape.Square;
 
@@ -40,6 +42,35 @@ public class ReferenceTypeCastings {
        // cat.meow();
 
         ((Cat) animal2).meow();  // for one time to use
+
+       // ((Dog) animal2).bark();
+
+        System.out.println("---------------------------------------------");
+
+        Employee employee =new Tester("Ali",30,'M',42,"SDET",140000);
+
+        ( (Tester)employee ).bugReport();
+
+        //( (Tester)employee ).unitTest();
+
+       // ( (Developer)employee ).unitTest();
+
+       // Driver driver = (Driver) employee; // line 1
+        Person person = (Person) employee; // line 2
+       // Teacher teacher = (Teacher) employee; // line 3
+
+        System.out.println("------------------------------------------------");
+
+        Shape s1 = new Circle(10);
+        s1.area();
+        s1.perimeter();
+
+       // ( (Cube)s1 ).volume();
+
+
+
+
+
 
 
 
